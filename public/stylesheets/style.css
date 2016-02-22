@@ -1,13 +1,16 @@
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 html {
-  background-color: #eee;
+  background-color: #fff;
 }
 body {
   padding: 50px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 12pt;
   color: #565154;
+}
+p {
+  line-height: 18pt;
 }
 h1 {
   text-align: left;
@@ -19,10 +22,18 @@ h2 {
   font-size: 18pt;
   color: #A2A2A2;
 }
+small{
+  font-size: 11pt;
+  line-height: 11pt;
+}
+li{
+  margin-bottom: 8px;
+}
 
 hr {
 	border: 1px solid #bbbbbb;
-	margin: 10px;
+	margin: 20pt;
+  width:130%;
 }
 
 a {
@@ -33,11 +44,48 @@ a {
   padding: 13px;
   margin: 10px;
 }
+table{
+  border-collapse: collapse;
+}
+tr{
+  margin: 20px;
+  margin-top:auto;
+  vertical-align: middle !important;
+  height:30px;
+}
+th{
+  text-align: left;
+  line-height: 25pt;
+  font-size: 11pt;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
 
 .page-wrap {
     margin: 0 auto;
     max-width: 1000px;
-    padding: 50px 0
+    padding: 50px 0;
+}
+.sym-wrap{
+  max-width: 70%;
+}
+.color {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: block;
+    float: left;
+    height: 60px;
+    width: 100%;
+    margin: 0 0.8em 0.5em 0;
+}
+.circle {
+  border-radius: 50%;
+  width: 28px;
+  height: 28px; 
+  background-color: #f08421;
+  display: inline-block;
+  margin-right:20px;
+  /* width and height can be anything, as long as they're equal */
 }
 #white{
   color: #6B1E4B;
@@ -669,7 +717,7 @@ element.style {
 }
 
 /* Radial Out */
-.hvr-radial-out {
+ .hvr-radial-out {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
