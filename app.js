@@ -12,7 +12,7 @@ var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.engine('html', require('jade').renderFile);
+app.engine('.html', require('ejs').__express);
 app.set('view engine', 'html');
 
 //app.engine('.html', require('jade'));

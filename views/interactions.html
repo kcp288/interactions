@@ -2,23 +2,97 @@
 <head>
 <link rel="stylesheet" type="text/css" href="/stylesheets/hover.css">
 <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+<link rel="stylesheet" type="text/css" href="/stylesheets/ihover.css">
 
 </head>
 <body>
+<div class='page-wrap'>
 <h1>Interactions Research</h1>
 
-<h3>Buttons</h3>
+Initial exploration of Symmetric design patterns in the browser. Incorporating Outbrain language into iteratable HTML. 
+
+<h2>Symmetric</h2>
+
+
+<hr>
+<h2>Buttons</h2>
 <section class="flex-container">
 <a href="#" class="hvr-bounce-to-top">Background Bounce</a>
+<a href="#" id="bg" class="hvr-buzz">Buzz on Hover</a>
+
 <a href="#" id="white" class="hvr-radial-out">Radial Background</a>
 <a href="#" id="underline" class="hvr-underline-from-left">Underline From Left</a>
+<!--<a href="#" style="color:#6B1E4B" class="hvr-hollow">Hollow Background</a>-->
+
+
 </section>
 
 <hr>
 
-<h3>Links</h3>
 
+<h2>Spinners</h2>
+<section class="flex-container" style="height:100px">
+<div id="loader-item" class="load-container loader"></div>
+<div id="loader-item" class="load-container loader3"></div>
+<div id="loader-item" class="load-container loader2"></div>
+<div id="loader-item" class="load-container loader4">Loading...</div>
+</section>
+<section class="flex-container" >
 
+<div id="loader-item" class="load-container loader6">Loading...</div>
+<div id="loader-item" class="load-container loader5">Loading...</div>
+<div id="loader-item" class="load-container loader8">Loading...</div>
+<div id="loader-item" class="load-container loader7">Loading...</div>
+
+</section>
+<hr>
+
+<h2> Image Interactions </h2>
+<section class="flex-container">
+
+<!-- Top to bottom-->
+ 
+    <div class="ih-item square effect3 top_to_bottom"><a style="background-color:transparent;" href="#">
+        <div class="img"><img src="images/image1.jpg" alt="img"></div>
+        <div class="info">
+          <h2 style="text-transform:none; color:white">Does Bernie Sanders ever wear pants?</h2>
+        </div></a></div>
+ 
+    <div class="ih-item square effect6 from_top_and_bottom"><a style="background-color:transparent;" href="#">
+        <div class="img"><img src="images/image1.jpg" alt="img"></div>
+        <div class="info">
+          <h2 style="text-transform:none; color:white">What did people eat in the 1800s?</h2>
+        </div></a></div>
+
+    <div class="ih-item square colored effect13 bottom_to_top"><a style="background-color:transparent;" href="#">
+        <div class="img"><img src="images/image1.jpg" alt="img"></div>
+        <div class="info">
+          <h2 style="text-transform:none; color:white">Astonishing new research on dank memes</h2>
+        </div></a></div>
+
+    <div class="ih-item square colored effect3 top_to_bottom bw"><a style="background-color:transparent;" href="#">
+        <div class="img"><img src="images/image1.jpg" alt="img"></div>
+        <div class="info">
+          <h2 style="text-transform:none; color:white">Astonishing new research on dank memes</h2>
+        </div></a></div>
+
+<div class="ih-item square effect6 from_top_and_bottom blur"><a style="background-color:transparent;" href="#">
+        <div class="img"><img src="images/image1.jpg" alt="img"></div>
+        <div class="info">
+          <h2 style="text-transform:none; color:white">What did people eat in the 1800s?</h2>
+        </div></a></div>
+
+    <div class="ih-item square colored effect13 bottom_to_top blur"><a style="background-color:transparent;" href="#">
+        <div class="img"><img src="images/image1.jpg" alt="img"></div>
+        <div class="info">
+          <h2 style="text-transform:none; color:white">Astonishing new research on dank memes</h2>
+        </div></a></div>
+
+</section>
+<hr>
+<h2>Dot Navigation</h2>
+
+</div>
 </body>
 
 </html>

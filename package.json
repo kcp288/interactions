@@ -11,8 +11,11 @@
     "debug": "~2.2.0",
     "express": "~4.13.1",
     "hover.css": "^2.0.2",
-    "jade": "~1.11.0",
+    "ejs": "*",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "loaders.css": "^0.1.2"
   }
 }
