@@ -261,11 +261,11 @@ element.style {
   0%,
   80%,
   100% {
-    box-shadow: 0 0 #eee;
+    box-shadow: 0 0 #fff;
     height: 4em;
   }
   40% {
-    box-shadow: 0 -2em #eee;
+    box-shadow: 0 -2em #fff;
     height: 5em;
   }
 }
@@ -273,11 +273,11 @@ element.style {
   0%,
   80%,
   100% {
-    box-shadow: 0 0 #eee;
+    box-shadow: 0 0 #fff;
     height: 4em;
   }
   40% {
-    box-shadow: 0 -2em #eee;
+    box-shadow: 0 -2em #fff;
     height: 5em;
   }
 }
@@ -295,7 +295,7 @@ element.style {
 .loader2:before {
   width: 5.2em;
   height: 10.2em;
-  background: #eee;
+  background: #fff;
   border-radius: 10.2em 0 0 10.2em;
   top: -0.1em;
   left: -0.1em;
@@ -319,7 +319,7 @@ element.style {
 .loader2:after {
   width: 5.2em;
   height: 10.2em;
-  background: #eee;
+  background: #fff;
   border-radius: 0 10.2em 10.2em 0;
   top: -0.1em;
   left: 5.1em;
@@ -381,7 +381,7 @@ element.style {
   content: '';
 }
 .loader3:after {
-  background: #eee;
+  background: #fff;
   width: 75%;
   height: 75%;
   border-radius: 50%;
