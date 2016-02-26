@@ -70,10 +70,11 @@ th{
   font-weight: 800;
   margin-bottom: 30px;
 }
-input{
+input, select{
   padding-left: 10px;
   border: 1px solid #93908C;
   border-radius: 3px;
+  box-sizing: border-box;
   width: 320px;
   height: 31px;
   outline: none;
@@ -85,19 +86,20 @@ input{
 }
 textarea:focus, input:focus{
   border:2px solid #69739E;
-  
+  box-sizing: border-box;
+
 
 }
 .password{
-  background: url(images/lock.png) no-repeat scroll;
+  box-sizing: border-box;
+  background: url(images/lock.png) no-repeat;
+  background-position: 0px;
   padding-left: 40px;
+  position: relative;
 }
 .money{
   background: url(images/dollar.png) no-repeat scroll;
   padding-left: 35px;
-  text-align: right;
-  font-size: 9pt;
-  padding-right: 5px;
 }
 .invalid, .invalid:focus{
   border:2px solid #BE3655;
@@ -139,6 +141,15 @@ textarea:focus, input:focus{
   display: inline-block;
   margin-right:20px;
   /* width and height can be anything, as long as they're equal */
+}
+.chart{
+  width:600px;
+}
+.chart-color {
+  height: 30px;
+  width: 600px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #BE3655, #C4BFB9, #819E43);
 }
 #white{
   color: #6B1E4B;

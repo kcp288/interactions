@@ -106,7 +106,31 @@
     <th><div class="circle" style="background-color:#A3A9DC"></div>$ CPA #A3A9DC</th>
     <th></th>
   </tr>
+</table><br>
+
+<table class="chart">
+  <tr>
+    <th style="text-align:left"><img src="images/down-red.png"></th>
+    <th style="text-align:center; font-weight:800; color:#A2A2A2">0</th>
+    <th style="text-align:right"><img src="images/up-green.png"></th>
+  </tr>
 </table>
+<div class="chart-color"></div>
+<table class="chart">
+  <tr>
+    <th style="text-align:left">Unsatisfactory</th>
+    <th style="text-align:left">Neutral</th>
+    <th style="text-align:center">Good</th>
+    <th style="text-align:right">Great!</th>
+  </tr>
+  <tr>
+    <th style="text-align:left"><img src="images/unsatisfactory.png"></th>
+    <th style="text-align:left"><img src="images/neutral.png"></th>
+    <th style="text-align:center"><img src="images/good.png"></th>
+    <th style="text-align:right"><img src="images/great.png"></th>
+  </tr>
+</table>
+
 <hr>
 
 <h2>Typography</h2>
@@ -142,15 +166,24 @@ List header
   Password Field <br>
   <input type="text" name="Password" class="password" placeholder="&sdot;&sdot;&sdot;&sdot;&sdot;&sdot;&sdot;&sdot;"><br>
   Money Field <br>
-  <input type="text" name="firstname" class="money" value="USD"><br>
+  <input type="number" min="0.01" step="0.01" name="money" class="money"><br>
 </form>
 
 </div>
 
+<hr>
 
+<h2>Dropdowns</h2>
 
+<select name="dropdown" class="password" style="text-indent:30px">
+  <option value="1">Pick me</option>
+  <option value="2">No pick me</option>
+  <option value="3">No me!</option>
+  <option value="4">Pick me</option>
+</select>
 
-<a style="margin-top:50px" class="hvr-bounce-to-top" onclick="showdiv('research')">INTERACTIONS RESEARCH</a>
+<br>
+<a style="margin-top:50px; margin-left: auto" class="hvr-bounce-to-top" onclick="showdiv('research')">INTERACTIONS RESEARCH</a>
 <div id="research" style="display:none">
 <h2>Buttons</h2>
 <section class="flex-container">
