@@ -73,6 +73,26 @@ button{
   width: 136px;
 }
 
+.loginfield{
+  margin:0 0 10px 0}
+
+.box-page .msg-position{
+  position:relative;
+  left:285px;
+  width:100%;
+  top:-55px;
+  display:inline-block
+}
+
+.box-page .loginfield .msg-position{
+  position:relative;
+  left:272px;
+  width:100%;
+  top:-37px;
+  display:inherit
+}
+
+
 button:hover{
   background-color: #450A2D;
 }
@@ -100,17 +120,19 @@ th{
 
 input, select{
   padding-left: 10px;
+  position: relative;
+  width: 100%;
   border: 1px solid #93908C;
   border-radius: 3px;
   box-sizing: border-box;
-  width: 320px;
   height: 31px;
   outline: none;
-  margin-bottom: 20px;
-  margin-top:5px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 11pt;
   font-weight: 200;
+  margin: 3px 0 10px 0;
+
+
 }
 
 textarea:focus, input:focus{
@@ -141,7 +163,14 @@ a {
   margin: 10px;
 }
 
+.form{
+  margin: 0 auto;
+  color: #726C6F;
+  font-weight: 600;
+  font-size: 13.5px;
+  text-align: left;
 
+}
 .card-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -150,14 +179,19 @@ a {
   flex-direction:row;
 }
 .card {
-  text-align: center;
   border: 2px solid #DADBE1;
   border-radius: 3px;
   background-color: white;
   display: flex;
   flex-direction: column;
-  padding: 10px;
-  margin-bottom: 20px;
+    margin: 0 auto 16px;
+    text-align: left;
+    padding: 32px;
+    line-height: 20px;
+    max-width: 675px;
+
+
+
 }
 .card-label{
   font-size: 18px;
@@ -557,6 +591,9 @@ input.radio-disabled[type="radio"]:checked + label span {
 
 #hollow:hover {
 	color: #6B1E4B;
+}
+.form {
+  text-align: left;
 }
 
 .flex-container {
