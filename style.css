@@ -9,10 +9,22 @@ body {
   font-size: 12pt;
   font-weight: 400;
   color: #565154;
+  padding: 0rem 0em 0rem 0em;
+  margin-top:100px;
+  margin-left:auto;
+  margin-right:auto;
+  width:100%;
+  max-width:1000px;
+  min-width:520px;
+  min-height: 100%;
 }
 
 p {
   line-height: 18pt;
+  max-width: 700px;
+}
+p,h1,h2,h3,h4,li{
+  max-width: 700px;
 }
 
 h1 {
@@ -41,7 +53,6 @@ li{
 hr {
 	border: 1px solid #bbbbbb;
 	margin: 20pt;
-  width:130%;
 }
 
 button{
@@ -68,7 +79,8 @@ button:hover{
 
 table{
   border-collapse: collapse;
-
+  margin: auto 0;
+  width: 100%;
 }
 
 tr{
@@ -117,6 +129,7 @@ header {
   left: 0px;
   height: 45px;
   width: 100%;
+  z-index: 1;
 }
 
 a {
@@ -128,25 +141,12 @@ a {
   margin: 10px;
 }
 
-/* Document setup */
-
-.page-wrap {
-    margin: 0 auto;
-    max-width: 1000px;
-    padding: 50px 50px;
-    padding-top: 70px;
-}
-
-.sym-wrap{
-  max-width: 80%;
-}
 
 .card-wrap {
-  max-width: 130%;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction:row;
 }
 .card {
@@ -169,7 +169,7 @@ a {
   margin-left: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction:row;
 }
 
