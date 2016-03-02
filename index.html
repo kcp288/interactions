@@ -15,6 +15,7 @@
 
 <p>Initial exploration of Symmetric design patterns in the browser. Incorporating Outbrain's style guide into a live pattern library, in iteratable HTML.</p>
 <hr>
+<!-- COLORS -->
 <h2>Colors</h2>
 
 <table style="width:130%">
@@ -111,6 +112,7 @@
   </tr>
 </table><br>
 
+<h4>Chart example</h4>
 <table class="chart">
   <tr>
     <th style="text-align:left"><img src="images/down-red.png"></th>
@@ -118,7 +120,7 @@
     <th style="text-align:right"><img src="images/up-green.png"></th>
   </tr>
 </table>
-<div class="chart-color"></div>
+<div class="chart chart-color"></div>
 <table class="chart">
   <tr>
     <th style="text-align:left">Unsatisfactory</th>
@@ -135,7 +137,7 @@
 </table>
 
 <hr>
-
+<!-- TYPOGRAPHY -->
 <h2>Typography</h2>
 
 <h1>H1 Primary Headline, 23pt Regular, Dark Gray #726C6F, Lorem Ipsum Dolor</h1>
@@ -155,10 +157,10 @@ List header
 <p style="width:600px"><small>Small text, 11pt Regular, Gray #565154. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small></p>
 
 <hr>
-
+<!-- TEXT FIELDS -->
 <h2>Text Fields</h2>
 
-
+<div class="flexbox-container">
 <form class="form">
   Default Field <br>
   <input type="text" name="default" placeholder="Default form value"><br>
@@ -166,19 +168,21 @@ List header
   <input type="text" name="invalid" class="invalid"><img src="images/alert.png" style="margin-left: 10px; margin-bottom:-3px">
   <br>
   <span style="font-family: Open Sans, Helvetica, Arial, sans-serif;font-size: 9pt;font-weight: 100; color: #BE3655;">Error messaging looks like this.</span><br>
-  <br><br>
+</form>
+<form class="form">
   Password Field <br>
   <input type="text" name="Password" class="password" placeholder="&sdot;&sdot;&sdot;&sdot;&sdot;&sdot;&sdot;&sdot;"><br>
   Money Field <br>
   <input type="number" min="0.01" step="0.01" name="money" class="money"><br>
 </form>
+</div>
 
 
 
 <hr>
+<!-- BUTTONS -->
 <h2>Buttons</h2>
 <!--Size 1-->
-<div style="width:130%">
 <div class="card-wrap">
   <div class="card">
     <h2 class="card-label">Size 1</h2>
@@ -249,11 +253,12 @@ List header
 
 
 </div>
-</div>
 
 <hr>
+<!-- CHECKBOXES -->
 <h2>Checkboxes</h2>
-<table class="checkboxes" style="width:130%; margin: auto 0;">
+<div style="margin: auto 0; text-align:center;">
+<table class="checkboxes" style="width:130%; margin: auto 0;max-width:700px">
   <tr style="height:40px">
     <td><h2 class="card-label">Active</h2></td>
     <td><h2 class="card-label"></h2></td>
@@ -270,8 +275,24 @@ List header
     <td><input checked type="radio" id="c4" name="radio-ex"/>
     <label for="c4"><span></span>Label</label></td>
   </tr>
+  <tr style="height:40px">
+    <td><h2 class="card-label">Error</h2></td>
+    <td><h2 class="card-label"></h2></td>
+    <td><h2 class="card-label"></h2></td>
+    <td></td>
+  </tr>
+  <tr style="height:40px">
+    <td><input class="checkbox-error" type="checkbox" id="c5" />
+    <label for="c5"><span></span>Label</label></td>
+    <td><input checked class="checkbox-error" type="checkbox" id="c6" />
+    <label for="c6"><span></span>Label</label></td>
+    <td><input class="radio-error" type="radio" id="c7" name="radio-ex2"/>
+    <label for="c7"><span></span>Label</label></td>
+    <td><input checked class="radio-error" type="radio" id="c8" name="radio-ex2"/>
+    <label for="c8"><span></span>Label</label></td>
+  </tr>
 </table>
-
+</div>
 </div>
 <br><hr>
 

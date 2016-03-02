@@ -68,6 +68,7 @@ button:hover{
 
 table{
   border-collapse: collapse;
+
 }
 
 tr{
@@ -140,29 +141,46 @@ a {
 }
 
 .card-wrap {
-  text-align: center;
   max-width: 130%;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  justify-content: space-between;
+  flex-direction:row;
 }
-
 .card {
   text-align: center;
-  min-width:40%;
-  max-width: 60%;
-  margin: 15px;
   border: 2px solid #DADBE1;
   border-radius: 3px;
   background-color: white;
   display: flex;
   flex-direction: column;
   padding: 10px;
+  margin-bottom: 20px;
 }
-
 .card-label{
   font-size: 18px;
 }
+
+.flexbox-container {
+  width:100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction:row;
+}
+
+.flexbox-container > div {
+  width: 50%;
+  padding: 10px;
+}
+
+.flexbox-container > div:first-child {
+  margin-right: 20px;
+}
+
 
 /* Buttons */
 
@@ -345,6 +363,15 @@ input[type="checkbox"]:checked + label span {
     background:url(images/checked.png) center no-repeat, #726C6F;
 }
 
+input.checkbox-error[type="checkbox"] + label span {
+  border: 2px solid #C03453;
+}
+
+input.checkbox-error[type="checkbox"]:checked + label span {
+  border: 2px solid #C03453;
+  background:url(images/checked.png) center no-repeat, #C03453;
+}
+
 input[type="radio"] {
     display:none;
 }
@@ -362,15 +389,20 @@ input[type="radio"] + label span {
 }
 
 input[type="radio"]:checked + label span {
-    background:url(images/checked.png) center no-repeat, #726C6F;
+    background:url(images/rdio.png) center no-repeat, white;
 } 
 
-.checkbox-error {
+input.radio-error[type="radio"] + label span {
   border: 2px solid #C03453;
 }
-.checkbox-error:checked {
-  background:url(images/checked.png) center no-repeat, #C03453;
-}
+
+input.radio-error[type="radio"]:checked + label span {
+      border: 2px solid #C03453;
+      background:url(images/rdio-err.png) center no-repeat, white;
+
+} 
+
+
 
 .table-td{
   vertical-align: top;
@@ -436,6 +468,9 @@ input[type="radio"]:checked + label span {
 
 .chart{
   width:600px;
+  text-align: center;
+  margin-left:auto; 
+    margin-right:auto;
 }
 
 .chart-color {
