@@ -6,7 +6,8 @@ html {
 
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 12pt;
+  font-size: 11pt;
+  letter-spacing: .3pt;
   font-weight: 400;
   color: #565154;
   padding: 0rem 0em 0rem 0em;
@@ -51,8 +52,13 @@ li{
 }
 
 hr {
-	border: 1px solid #bbbbbb;
+	border: 1px solid #DADBE1;
 	margin: 20pt;
+}
+.card-hr{
+  margin: 0px;
+  margin-top: -10px;
+  margin-bottom: 45px;
 }
 
 button{
@@ -65,7 +71,8 @@ button{
   border-radius: 3px;
   padding: 13px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 12pt;
+  font-weight: 300;
+  font-size: 11pt;
   padding-left: 20px;
   padding-right: 20px;
   margin-right:30px;
@@ -119,7 +126,7 @@ th{
 }
 
 input, select{
-  padding-left: 10px;
+  padding-left: 5px;
   position: relative;
   width: 100%;
   border: 1px solid #93908C;
@@ -154,13 +161,15 @@ header {
   z-index: 1;
 }
 
+
 a {
-  color: white;
+  color: #565154;
+}
+a:hover{
   text-decoration: none;
-  background-color: #6B1E4B;
-  border-radius: 3px;
-  padding: 13px;
-  margin: 10px;
+}
+.small{
+  font-size: 9pt;
 }
 
 .form{
@@ -186,13 +195,11 @@ a {
   flex-direction: column;
     margin: 0 auto 16px;
     text-align: left;
-    padding: 32px;
+    padding: 27px;
     line-height: 20px;
     max-width: 675px;
-
-
-
 }
+
 .card-label{
   font-size: 18px;
 }
@@ -385,14 +392,15 @@ input[type="checkbox"] {
 
 input[type="checkbox"] + label span {
   display:inline-block;
-  width:19px;
-  height:19px;
+  width:16px;
+  height:16px;
   margin:-1px 10px 0 0;
   vertical-align:middle;
   background:white;
   border: 2px solid #726C6F;
   border-radius: 3px;
   cursor:pointer;
+  font-size: 10pt;
 }
 
 input[type="checkbox"]+ label span:hover {
@@ -492,8 +500,15 @@ input.radio-disabled[type="radio"]:checked + label span {
   background: transparent;
 }
 
+.login {
+ position: fixed;
+ top:50%;
+ left:50%;
+ width: 675px;
+transform: translate(-50%, -60%);
+}
 /* Text Fields */
-.password{
+input[type=password] {
   box-sizing: border-box;
   background-attachment: fixed;
   background-size: cover;
@@ -564,6 +579,15 @@ input.radio-disabled[type="radio"]:checked + label span {
 }
 
 /* Interactions Research */
+
+.normal {
+  color: white;
+  text-decoration: none;
+  background-color: #6B1E4B;
+  border-radius: 3px;
+  padding: 13px;
+  margin: 10px;
+}
 
 #white{
   color: #6B1E4B;
