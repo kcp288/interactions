@@ -347,11 +347,13 @@ a:hover{
 .size-two {
   padding-top:5px;
   padding-bottom:5px;
+  min-width: 130px;
 }
 
 .size-three {
   padding: 5px;
   font-size: 10pt;
+  min-width: 130px;
 }
 .tagged {
   display: inline;

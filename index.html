@@ -9,8 +9,8 @@
 
 <div class="nav">
     <a href="index.html"><img src="images/sym-header.png"></a>
+    <a class="item" href="settings.html">Settings</a>
     <a class="item" href="login.html">Login</a>
-
 </div>
 
 
@@ -339,8 +339,8 @@ List header
       <small>Standard body text, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </small>
     
       <div class="modal-buttons">
-        <button id="close" class="btn-two size-two">Button</button>
-        <button class="size-two">Submit</button>  
+        <button style="color:#6B1E4B; font-size: 11pt" class="btn-two size-two close">Button</button>
+        <button style="color:white; font-size: 11pt" class="size-two close">Submit</button>  
       </div>
 
     </div>
@@ -454,21 +454,26 @@ function showdiv(id){
 // Get the modal
 var modal = document.getElementById('modal');
 
+
 // Get the button that opens the modal
 var btn = document.getElementById("modal-btn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+for (var i = 0; i < document.getElementsByClassName("close").length; i++) {
+  var span = document.getElementsByClassName("close")[i];
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+}
+
 
 // When the user clicks on the button, open the modal 
 btn.onclick = function() {
     modal.style.display = "block";
+    console.log("style", modal.style.display);
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
+
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
