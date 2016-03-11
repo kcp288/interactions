@@ -15,9 +15,14 @@ body {
   margin-left:auto;
   margin-right:auto;
   width:100%;
-  max-width:1000px;
   min-width:520px;
   min-height: 100%;
+}
+.wrapper{
+    margin-left:auto;
+    margin-right:auto;
+    max-width:1000px;
+    min-height: 100%;
 }
 
 p {
@@ -26,6 +31,13 @@ p {
 }
 p,h1,h2,h3,h4,li{
   max-width: 700px;
+}
+
+a {
+  color: #565154;
+}
+a:hover{
+  text-decoration: none;
 }
 
 h1 {
@@ -72,7 +84,7 @@ hr {
   left: 0px;
   height: 45px;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   color: white;
   margin: 0 auto;
   justify-content: space-around;
@@ -91,6 +103,73 @@ hr {
 .nav > :nth-child(1) {
   margin-right: auto;
 }
+
+footer {
+  width: 100%;
+  color: #333;
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  font-size: 0.85em;
+  font-weight: 400;
+  opacity: 0.6;
+  bottom: 0px;
+}
+footer .footer-content {
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 0 27px;
+}
+footer .footer-content .footer-logo > a > img {
+  width: 118px;
+  height: 26px;
+}
+footer .footer-content .footer-logo > div {
+  font-size: 10px;
+  padding-left: 3px;
+}
+footer .footer-content ._am_core-links {
+  padding-top: 12px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 500px;
+}
+footer .footer-content ._am_core-links a {
+  color: #333;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
 
 button{
   display: inline-block;
@@ -232,12 +311,7 @@ textarea:focus, input:focus{
 }
 
 
-a {
-  color: #565154;
-}
-a:hover{
-  text-decoration: none;
-}
+
 
 .form{
   margin: 0 auto;
