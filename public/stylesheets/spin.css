@@ -10,7 +10,7 @@
   background: -webkit-linear-gradient(left, #6b1e4b 10%, rgba(255, 255, 255, 0) 42%);
   background: -o-linear-gradient(left, #6b1e4b 10%, rgba(255, 255, 255, 0) 42%);
   background: -ms-linear-gradient(left, #6b1e4b 10%, rgba(255, 255, 255, 0) 42%);*/
-  background: linear-gradient(to right, #445d8c 10%, #716ca0 20%, rgba(255, 255, 255, 0) 42%);
+  background: linear-gradient(to right, #567e98 10%, rgba(255, 255, 255, 0) 42%);
   position: relative;
   -webkit-animation: load3 1.4s infinite linear;
   animation: load3 1.4s infinite linear;
