@@ -1,0 +1,95 @@
+<!doctype HTML>
+<head>
+<link rel="stylesheet" type="text/css" href="hover.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="ihover.css">
+<link rel="stylesheet" type="text/css" href="spin.css">
+</head>
+<body>
+
+
+<div class="nav">
+    <a href="index.html"><img src="images/sym-header.png"></a>
+    <a class="item" href="settings.html">Settings</a>
+    <a class="item" href="login.html">Login</a>
+</div>
+<div class="wrapper">
+
+<div class="login">
+
+  <div id="loader-item" class="load-container loaderex"></div>
+
+</div>
+
+<!-- Trigger/Open The Modal -->
+
+  <!-- The Modal -->
+<div id="modal" class="modal">
+    <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&#10005;</span>
+    <h2 style="margin-bottom:10px"> Password changed!</h2>
+    <small>An email has been sent to your address with instructions on how to change your password. </small>
+    
+    <div class="modal-buttons">
+        <button style="color:#6B1E4B; font-size: 11pt" class="btn-two size-two close">Button</button>
+        <button style="color:white; font-size: 11pt" class="size-two close">Submit</button>  
+    </div>
+  </div>
+</div>
+</div>
+
+  <footer style="position:absolute">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <a href="http://www.outbrain.com"><img src="https://u.outbrain.com/amplify/static/dist/site/images/outbrain-logo-footer.png"/></a>
+        <div>© 2016 Outbrain Inc. All rights reserved.</div>
+      </div>
+      <div class="_am_core-links">
+        <a id="amplify-link" href="http://www.outbrain.com/amplify">Amplify</a>
+        <a id="terms-link" href="http://www.outbrain.com/legal/amplify-terms">Amplify Terms</a>
+        <a id="policy-link" href="http://www.outbrain.com/legal/privacy">Privacy Policy</a>
+        <a id="contact-us-link" href="http://www.outbrain.com/contact">Contact Us</a>
+        <a id="help-link" href="http://help.outbrain.com/?b_id=1524">Help/FAQs</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script>
+// Get the modal
+var modal = document.getElementById('modal');
+modal.style.display = "none";
+console.log("style", modal.style.display);
+
+
+// Get the button that opens the modal
+var btn = document.getElementById("modal-btn");
+
+// Get the <span> element that closes the modal
+for (var i = 0; i < document.getElementsByClassName("close").length; i++) {
+  var span = document.getElementsByClassName("close")[i];
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+}
+
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+    console.log("style", modal.style.display);
+}
+
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+</html>

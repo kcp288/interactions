@@ -1,15 +1,19 @@
 <!doctype HTML>
 <head>
-<link rel="stylesheet" type="text/css" href="hover.css">
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" type="text/css" href="ihover.css">
-<script type="text/javascript" src="javascripts/jquery-min.js"></script>
+<link rel="stylesheet" type="text/css" href="public/stylesheets/hover.css">
+<link rel="stylesheet" type="text/css" href="public/stylesheets/style.css">
+<link rel="stylesheet" type="text/css" href="public/stylesheets/ihover.css">
+<link rel="stylesheet" type="text/css" href="public/stylesheets/slick.css"/>
+<link rel="stylesheet" type="text/css" href="public/stylesheets/slick-theme.css"/>
+
+<script type="text/javascript" src="public/javascripts/jquery-min.js"></script>
+<script type="text/javascript" src="public/javascripts/slick.min.js"></script>
 
 </head>
 <body>
 
 <div class="nav">
-    <a href="index.html"><img src="images/sym-header.png"></a>
+    <a href="index.html"><img src="public/images/sym-header.png"></a>
     <a class="item" href="settings.html">Settings</a>
     <a class="item" href="login.html">Login</a>
 </div>
@@ -21,9 +25,72 @@
 
 <h1>Symmetric</h1>
 
+<div class="card">
+<h2>Mission Statement</h2>
+
+<p>Symmetric is a visual language that has been designed to represent the Outbrain brand and design voice of its digital products in a cohesive, consistent manner.</p>
+<p>Symmetric is a live, up-to-date style guide and pattern library containing core reusable UI components maintained and created by the Outbrain UXD team.</p>
+<p>The purpose of Symmetric is to be a reference guide that helps designers working on different products within Outbrain to maintain a consistent and unified voice, and to create designs that ultimately look like they belong to the same Outbrain family and are instantly recognizable as belonging to the overall Outbrain brand.</p>
 <p>Initial exploration of Symmetric design patterns in the browser. Incorporating Outbrain's style guide into a live pattern library, in iteratable HTML.</p>
 
+</div>
 
+<div class="card">
+<h2>Symmetric Values</h2>
+
+<p>These are the values that guided the creation of Symmetric, and the values that UXD uses to evaluate whether something makes it into the universal Symmetric language or not. These values also serve as a rubric - any changes made to Symmetric should be done with these values in mind. Values are either <strong>Aesthetic</strong> or <strong>Functional</strong>.</p>
+</div>
+<div class="card">
+<h2>Aesthetic Values</h2>
+<ul>
+  <li><strong>Professional</strong> - Designs should showcase the fact that Outbrain is professional and enterprise software. Designs should reflect that Outbrain is one of the leading content marketing platforms in the industry. </li>
+  <li><strong>Clean</strong> - Designs should strive to minimize clutter and superfluous elements that don't serve enough functional purpose, follow an organized grid, and contain consistent spacing.</li>
+  <li><strong>Modern</strong> - Designs should be consistent with the latest UI patterns seen across the web.</li>
+  <li><strong>Comprehensible/Legible</strong> - Designs should be as easy to read as possible. Proper whitespacing and contrast is important to us.</li>
+  <li><strong>"Outbrainy"</strong> - Designs should be reflective of the Outbrain brand, which is professional yet playful and approachable (see: the Amelia logo).</li>
+  <li><strong>Trustworthy/Intelligent</strong> - Designs should highlight data and data-driven insights.
+</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>What does the Symmetric Aesthetic look like?</h3>
+<ul>
+  <li>Shared universal color palette</li>
+  <li>Complimentary colors to orange (brand) and product-specific hero colors</li>
+  <li>Modular grouping</li>
+  <li>Card designs where appropriate</li>
+  <li>Round corners on fields and modules</li>
+  <li>White space</li>
+  <li>Flat buttons</li>
+  <li>Padded Button/padded table rows feeling of space and mobile first approach</li>
+  <li>Consistent chart / device colors</li>
+  <li>Purposeful subtle micro animations and innovative user interaction design to support the flow of the experience and the response to user</li>
+  <li>Layout hierarchy that feels crisp and modern</li>
+  <li>Consistent typography and concrete labeling</li>
+  <li>Crisp and clean flat, solid-filled (not lined) iconography (provided by Material Design unless custom)</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Functional Values</h2>
+<ul>
+  <li><strong>Up-to-Date</strong> - Anyone looking at Symmetric materials should be confident that whatever they are looking at is the latest version of Symmetric.</li>
+  <li><strong>Efficiency/Reusability</strong> - Symmetric should make it easy for UI components to be re-used for people across the entire product team.</li>
+  <li><strong>Consistency</strong> - Symmetric should encourage recognizable patterns, colors and elements that go hand-in-hand with reusability.</li>
+  <li><strong>Scalability/Maintainability</strong> - creators should be able to change an element in one place and the change should propagate for all instances where that element is located.</li>
+  <li><strong>Test-Driven/Adaptable</strong></li>
+</ul>
+</div>
+<div class="card">
+<h3>Symmetric should make the UX designers who create it feel: </h3>
+<ul>
+  <li><strong>Empowered</strong> - Do I feel like I can contribute to Symmetric?</li>
+  <li><strong>Autonomous</strong> - Do I feel like Symmetric helps me as an individual designer on my projects, and that I can confidently work with it independent of my teammates? </li>
+  <li><strong>Collaborative</strong> - Do I feel like Symmetric is a collaborative effort?</li>
+  <li><strong>In touch/in the loop</strong> - Through Symmetric, do I understand what’s happening in other Outbrain products designed by my teammates?</li>
+</ul>
+</div>
 <div style="text-align:center;"><button onclick="location.href='login.html'">EXAMPLE PAGE</button></div>
 
 <hr>
@@ -126,9 +193,9 @@
 <h4>Chart example</h4>
 <table class="chart">
   <tr>
-    <th style="text-align:left"><img src="images/down-red.png"></th>
+    <th style="text-align:left"><img src="public/images/down-red.png"></th>
     <th style="text-align:center; font-weight:800; color:#A2A2A2">0</th>
-    <th style="text-align:right"><img src="images/up-green.png"></th>
+    <th style="text-align:right"><img src="public/images/up-green.png"></th>
   </tr>
 </table>
 <div class="chart chart-color"></div>
@@ -140,10 +207,10 @@
     <th style="text-align:right">Great!</th>
   </tr>
   <tr>
-    <th style="text-align:left"><img src="images/unsatisfactory.png"></th>
-    <th style="text-align:left"><img src="images/neutral.png"></th>
-    <th style="text-align:center"><img src="images/good.png"></th>
-    <th style="text-align:right"><img src="images/great.png"></th>
+    <th style="text-align:left"><img src="public/images/unsatisfactory.png"></th>
+    <th style="text-align:left"><img src="public/images/neutral.png"></th>
+    <th style="text-align:center"><img src="public/images/good.png"></th>
+    <th style="text-align:right"><img src="public/images/great.png"></th>
   </tr>
 </table>
 
@@ -176,7 +243,7 @@ List header
   Default Field <br>
   <input type="text" name="default" placeholder="Default form value"><br>
   Invalid Field <br>
-  <div style="position:relative;"><input type="text" name="invalid" class="invalid"><img src="images/alert.png" style="position: absolute; margin-left: 10px; margin-top:8px"></div>
+  <div style="position:relative;"><input type="text" name="invalid" class="invalid"><img src="public/images/alert.png" style="position: absolute; margin-left: 10px; margin-top:8px"></div>
   <span style="font-family: Open Sans, Helvetica, Arial, sans-serif;font-size: 9pt;font-weight: 100; color: #BE3655;">Error messaging looks like this.</span><br>
 </form>
 <form class="form">
@@ -384,7 +451,9 @@ List header
 <h2>Spinners</h2>
 <section class="flex-container" style="height:100px">
 <div id="loader-item" class="load-container loader"></div>
+
 <div id="loader-item" class="load-container loader3"></div>
+
 <div id="loader-item" class="load-container loader2"></div>
 <div id="loader-item" class="load-container loader4">Loading...</div>
 </section>
@@ -404,37 +473,37 @@ List header
 <!-- Top to bottom-->
  
     <div class="ih-item square effect3 top_to_bottom"><a style="background-color:transparent;" href="#">
-        <div class="img"><img src="images/image1.jpg" alt="img"></div>
+        <div class="img"><img src="public/images/image1.jpg" alt="img"></div>
         <div class="info">
           <h2 style="text-transform:none; color:white">Does Bernie Sanders ever wear pants?</h2>
         </div></a></div>
  
     <div class="ih-item square effect6 from_top_and_bottom"><a style="background-color:transparent;" href="#">
-        <div class="img"><img src="images/image1.jpg" alt="img"></div>
+        <div class="img"><img src="public/images/image1.jpg" alt="img"></div>
         <div class="info">
           <h2 style="text-transform:none; color:white">What did people eat in the 1800s?</h2>
         </div></a></div>
 
     <div class="ih-item square colored effect13 bottom_to_top"><a style="background-color:transparent;" href="#">
-        <div class="img"><img src="images/image1.jpg" alt="img"></div>
+        <div class="img"><img src="public/images/image1.jpg" alt="img"></div>
         <div class="info">
           <h2 style="text-transform:none; color:white">Astonishing new research on dank memes</h2>
         </div></a></div>
 
     <div class="ih-item square colored effect3 top_to_bottom bw"><a style="background-color:transparent;" href="#">
-        <div class="img"><img src="images/image1.jpg" alt="img"></div>
+        <div class="img"><img src="public/images/image1.jpg" alt="img"></div>
         <div class="info">
           <h2 style="text-transform:none; color:white">Astonishing new research on dank memes</h2>
         </div></a></div>
 
 <div class="ih-item square effect6 from_top_and_bottom blur"><a style="background-color:transparent;" href="#">
-        <div class="img"><img src="images/image1.jpg" alt="img"></div>
+        <div class="img"><img src="public/images/image1.jpg" alt="img"></div>
         <div class="info">
           <h2 style="text-transform:none; color:white">What did people eat in the 1800s?</h2>
         </div></a></div>
 
     <div class="ih-item square colored effect13 bottom_to_top blur"><a style="background-color:transparent;" href="#">
-        <div class="img"><img src="images/image1.jpg" alt="img"></div>
+        <div class="img"><img src="public/images/image1.jpg" alt="img"></div>
         <div class="info">
           <h2 style="text-transform:none; color:white">Astonishing new research on dank memes</h2>
         </div></a></div>
@@ -534,8 +603,20 @@ function copyToClipboard(inputEle) {
 }
 </script>
 
+<script>
 
-<script src="javascripts/tooltip.js"></script>
+$(document).ready(function(){
+  $('.card-slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true
+  });
+});
+
+</script>
+<script src="public/javascripts/tooltip.js"></script>
 <script> $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
