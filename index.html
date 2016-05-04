@@ -8,622 +8,99 @@
 
 <script type="text/javascript" src="public/javascripts/jquery-min.js"></script>
 <script type="text/javascript" src="public/javascripts/slick.min.js"></script>
+<script type="text/javascript" src="public/javascripts/set-active-tab.js"></script>
 
 </head>
-<body>
 
 <div class="nav">
     <a href="index.html"><img src="public/images/sym-header.png"></a>
-    <a class="item" href="settings.html">Settings</a>
-    <a class="item" href="login.html">Login</a>
+    <a class="item" href="examples.html">Examples</a>
+  </div>
+<div class="side-nav">
+  <ul>
+    <a href="index.html" id="home"><li class="item">Mission Statement</li></a>
+    <a href="type.html" id="type"><li class="item">Typography</li></a>
+    <a href="colors.html" id="colors"><li class="item">Colors</li></a>
+    <a href="buttons.html" id="buttons"><li class="item">Buttons</li></a>
+    <a href="textfields.html" id="textfields"><li class="item">Text Fields</li></a>
+    <a href="checkboxes.html" id="checkboxes"><li class="item">Checkboxes</li></a>
+    <a href="modals.html" id="modals"><li class="item">Modals and Popovers</li></a>
+    <a href="animations.html" id="animations"><li class="item">Animations</li></a>
+  </ul>
 </div>
 
+<body>
+  
 <div class="wrapper">
 
+<div class="card item">
+  <h2>Mission Statement</h2>
 
-<main>
+  <p>Symmetric is a visual language that has been designed to represent the Outbrain brand and design voice of its digital products in a cohesive, consistent manner.</p>
+  <p>Symmetric is a live, up-to-date style guide and pattern library containing core reusable UI components maintained and created by the Outbrain UXD team.</p>
+  <p>The purpose of Symmetric is to be a reference guide that helps designers working on different products within Outbrain to maintain a consistent and unified voice, and to create designs that ultimately look like they belong to the same Outbrain family and are instantly recognizable as belonging to the overall Outbrain brand.</p>
+  <p>Initial exploration of Symmetric design patterns in the browser. Incorporating Outbrain's style guide into a live pattern library, in iteratable HTML.</p>
 
-<h1>Symmetric</h1>
-
-<div class="card">
-<h2>Mission Statement</h2>
-
-<p>Symmetric is a visual language that has been designed to represent the Outbrain brand and design voice of its digital products in a cohesive, consistent manner.</p>
-<p>Symmetric is a live, up-to-date style guide and pattern library containing core reusable UI components maintained and created by the Outbrain UXD team.</p>
-<p>The purpose of Symmetric is to be a reference guide that helps designers working on different products within Outbrain to maintain a consistent and unified voice, and to create designs that ultimately look like they belong to the same Outbrain family and are instantly recognizable as belonging to the overall Outbrain brand.</p>
-<p>Initial exploration of Symmetric design patterns in the browser. Incorporating Outbrain's style guide into a live pattern library, in iteratable HTML.</p>
-
-</div>
-
-<div class="card">
-<h2>Symmetric Values</h2>
-
-<p>These are the values that guided the creation of Symmetric, and the values that UXD uses to evaluate whether something makes it into the universal Symmetric language or not. These values also serve as a rubric - any changes made to Symmetric should be done with these values in mind. Values are either <strong>Aesthetic</strong> or <strong>Functional</strong>.</p>
-</div>
-<div class="card">
-<h2>Aesthetic Values</h2>
-<ul>
-  <li><strong>Professional</strong> - Designs should showcase the fact that Outbrain is professional and enterprise software. Designs should reflect that Outbrain is one of the leading content marketing platforms in the industry. </li>
-  <li><strong>Clean</strong> - Designs should strive to minimize clutter and superfluous elements that don't serve enough functional purpose, follow an organized grid, and contain consistent spacing.</li>
-  <li><strong>Modern</strong> - Designs should be consistent with the latest UI patterns seen across the web.</li>
-  <li><strong>Comprehensible/Legible</strong> - Designs should be as easy to read as possible. Proper whitespacing and contrast is important to us.</li>
-  <li><strong>"Outbrainy"</strong> - Designs should be reflective of the Outbrain brand, which is professional yet playful and approachable (see: the Amelia logo).</li>
-  <li><strong>Trustworthy/Intelligent</strong> - Designs should highlight data and data-driven insights.
-</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>What does the Symmetric Aesthetic look like?</h3>
-<ul>
-  <li>Shared universal color palette</li>
-  <li>Complimentary colors to orange (brand) and product-specific hero colors</li>
-  <li>Modular grouping</li>
-  <li>Card designs where appropriate</li>
-  <li>Round corners on fields and modules</li>
-  <li>White space</li>
-  <li>Flat buttons</li>
-  <li>Padded Button/padded table rows feeling of space and mobile first approach</li>
-  <li>Consistent chart / device colors</li>
-  <li>Purposeful subtle micro animations and innovative user interaction design to support the flow of the experience and the response to user</li>
-  <li>Layout hierarchy that feels crisp and modern</li>
-  <li>Consistent typography and concrete labeling</li>
-  <li>Crisp and clean flat, solid-filled (not lined) iconography (provided by Material Design unless custom)</li>
-</ul>
-</div>
-
-<div class="card">
-<h2>Functional Values</h2>
-<ul>
-  <li><strong>Up-to-Date</strong> - Anyone looking at Symmetric materials should be confident that whatever they are looking at is the latest version of Symmetric.</li>
-  <li><strong>Efficiency/Reusability</strong> - Symmetric should make it easy for UI components to be re-used for people across the entire product team.</li>
-  <li><strong>Consistency</strong> - Symmetric should encourage recognizable patterns, colors and elements that go hand-in-hand with reusability.</li>
-  <li><strong>Scalability/Maintainability</strong> - creators should be able to change an element in one place and the change should propagate for all instances where that element is located.</li>
-  <li><strong>Test-Driven/Adaptable</strong></li>
-</ul>
-</div>
-<div class="card">
-<h3>Symmetric should make the UX designers who create it feel: </h3>
-<ul>
-  <li><strong>Empowered</strong> - Do I feel like I can contribute to Symmetric?</li>
-  <li><strong>Autonomous</strong> - Do I feel like Symmetric helps me as an individual designer on my projects, and that I can confidently work with it independent of my teammates? </li>
-  <li><strong>Collaborative</strong> - Do I feel like Symmetric is a collaborative effort?</li>
-  <li><strong>In touch/in the loop</strong> - Through Symmetric, do I understand what’s happening in other Outbrain products designed by my teammates?</li>
-</ul>
-</div>
-<div style="text-align:center;"><button onclick="location.href='login.html'">EXAMPLE PAGE</button></div>
-
-<hr>
-<!-- COLORS -->
-<h2>Colors</h2>
-<table>
-  <tr>
-    <th><h2>OUTBRAIN</h2></th>
-    <th><h2>AMPLIFY</h2></th>
-    <th><h2>ENGAGE</h2></th>
-  </tr>
-  <tr>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#F08421"></div>Outbrain Brand #F08421</th>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#6b1e4b"></div>Amplify, Standard Btn #6B1E4B </th>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#5060A3"></div>Engage Brand #5060A3</th>
-  </tr>
-  <tr>
-    <th></th>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#86447D"></div>Btn Hover #86447D</th>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#63A1AB"></div>Primary (Buttons) #63A1AB</th>
-  </tr>
-    <tr>
-    <th></th>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#535C7F"></div>Table Header BG, Selected #535C7F</th>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#364E5F"></div>Level 2 #364E5F</th>
-  </tr>
-  <tr>
-    <th></th>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#69739E"></div>Small Hovers #69739E</th>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#65B2D5"></div>Level 3 #65B2D5</th>
-  </tr>
-  <tr>
-    <th></th>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#EBECF2"></div>Totals Row #EBECF2</th>
-    <th></th>
-  </tr>
-</table>
-<hr>
-<table>
-  <tr>
-    <th><h2>CROSS</h2></th>
-    <th></th>
-    <th><h2>DEVICE COLORS</h2></th>
-  </tr>
-  <tr>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#30708F"></div>Table Header #30708F</th>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#565154"></div>Reg Font Color #565154</th>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#C1ABD1"></div>Desktop #C1ABD1</th>
-  </tr>
-  <tr>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#598DA5"></div>Table Link Color #598DA5</th>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#93908C"></div>Subhead Font Color #93908C</th>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#6B1E4B"></div>Tablet #6B1E4B</th>
-  </tr>
-  <tr>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#A4C4D3"></div>Table/Chart Level 2 #A4C4D3</th>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#C4BFB9"></div>Tertiary Font #C4BFB9</th>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#598DA5"></div>Mobile #598DA5</th>
-  </tr>
-  <tr>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#D2F1FF"></div>Highlight Selection #D2F1FF</th>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#E2DFDE"></div>Dropdown Hover Selection #E2DFDE</th>
-    <th></th>
-  </tr>
-</table>
-<hr>
-<table>
-  <tr>
-    <th><h2>CHARTS</h2></th>
-    <th></th>
-    <th></th>
-  </tr>
-  <tr>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#E68853"></div>% CTR #E68853</th>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#6BC6C4"></div>$ CPM #6BC6C4</th>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#817BA1"></div># Uniques #817BA1</th>
-  </tr>
-  <tr>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#DDBD62"></div># Impressions #DDBD62</th>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#8DDAC9"></div>$ Spend #8DDAC9</th>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#BE3655"></div>Drop #BE3655</th>
-  </tr>
-  <tr>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#BBC656"></div># Clicks #BBC656</th>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#439093"></div>% Conversion Rate #439093</th>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#C4BFB9"></div>Neutral #C4BFB9</th>
-  </tr>
-  <tr>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#80B573"></div>$ Average CPC #80B573</th>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#6BB8D9"></div># Actions #6BB8D9</th>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#819E43"></div>Lift #819E43</th>
-  </tr>
-  <tr>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#488B70"></div># PVs #488B70</th>
-    <th><div data-toggle="tooltip" title="color" onclick="copyToClipboard(this)" class="circle" style="background-color:#A3A9DC"></div>$ CPA #A3A9DC</th>
-    <th></th>
-  </tr>
-</table><br>
-
-<h4>Chart example</h4>
-<table class="chart">
-  <tr>
-    <th style="text-align:left"><img src="public/images/down-red.png"></th>
-    <th style="text-align:center; font-weight:800; color:#A2A2A2">0</th>
-    <th style="text-align:right"><img src="public/images/up-green.png"></th>
-  </tr>
-</table>
-<div class="chart chart-color"></div>
-<table class="chart">
-  <tr>
-    <th style="text-align:left">Unsatisfactory</th>
-    <th style="text-align:left">Neutral</th>
-    <th style="text-align:center">Good</th>
-    <th style="text-align:right">Great!</th>
-  </tr>
-  <tr>
-    <th style="text-align:left"><img src="public/images/unsatisfactory.png"></th>
-    <th style="text-align:left"><img src="public/images/neutral.png"></th>
-    <th style="text-align:center"><img src="public/images/good.png"></th>
-    <th style="text-align:right"><img src="public/images/great.png"></th>
-  </tr>
-</table>
-
-<hr>
-<!-- TYPOGRAPHY -->
-<h2>Typography</h2>
-
-<h1 data-toggle="tooltip" title="text style" onclick="copyToClipboard(this)">H1 Primary Headline, 23pt Regular, Dark Gray #726C6F, Lorem Ipsum Dolor</h1>
-
-<h2>H2 Secondary Headline, 18pt Regular, Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing</h2>
-
-<p>Standard body, 12pt Regular, Gray #565154. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-List header
-<ul>
-  <li>Lorem ipsum dolor sit amet</li>
-  <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-  <li>Lorem ipsum dolor sit amet</li>
-
-</ul>
-
-<p style="width:600px"><small>Small text, 11pt Regular, Gray #565154. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small></p>
-
-<hr>
-<!-- TEXT FIELDS -->
-<h2>Text Fields</h2>
-
-<div class="flexbox-container">
-<form class="form">
-  Default Field <br>
-  <input type="text" name="default" placeholder="Default form value"><br>
-  Invalid Field <br>
-  <div style="position:relative;"><input type="text" name="invalid" class="invalid"><img src="public/images/alert.png" style="position: absolute; margin-left: 10px; margin-top:8px"></div>
-  <span style="font-family: Open Sans, Helvetica, Arial, sans-serif;font-size: 9pt;font-weight: 100; color: #BE3655;">Error messaging looks like this.</span><br>
-</form>
-<form class="form">
-  Password Field <br>
-  <input type="password" name="Password" class="password" placeholder="&sdot;&sdot;&sdot;&sdot;&sdot;&sdot;&sdot;&sdot;"><br>
-  Money Field <br>
-  <input type="number" min="0.01" step="0.01" name="money" class="money"><br>
-</form>
-</div>
-
-
-
-<hr>
-<!-- BUTTONS -->
-<h2>Buttons</h2>
-<!--Size 1-->
-<div class="card-wrap">
-  <div class="card">
-    <h2 class="card-label">Size 1</h2>
-    <div>
-      <button>Primary</button>
-      <button class="btn-disabled">Primary</button>
-    </div>
-    <div>
-      <button class="btn-two">Secondary</button>
-      <button class="btn-disabled">Secondary</button>
-    </div>
-    <div class="dark-bg">
-      <button class="btn-dark">Dark</button>
-      <button class="btn-dark btn-dark-disabled">Dark</button>
-      <br>Dark background; color may vary
-    </div>
-  </div>
-  <!--Size 2-->
-  <div class="card">
-    <h2 class="card-label">Size 2</h2>
-    <div>
-      <button class="size-two">Primary</button>
-      <button class="btn-disabled size-two">Primary</button>
-    </div>
-    <div>
-      <button class="btn-two size-two">Secondary</button>
-      <button class="btn-disabled size-two">Secondary</button>
-    </div>
-    <div class="dark-bg">
-      <button class="btn-dark size-two">Dark</button>
-      <button class="btn-dark btn-dark-disabled size-two">Dark</button>
-      <br>Dark background; color may vary
-    </div>
-  </div> 
-  <!--Size 3-->
-  <div class="card">
-    <h2 class="card-label">Size 3</h2>
-    <div>
-      <button class="size-three">Primary</button>
-      <button class="btn-disabled size-three">Primary</button>
-    </div>
-    <div>
-      <button class="btn-two size-three">Secondary</button>
-      <button class="btn-disabled size-three">Secondary</button>
-    </div>
-    <div class="dark-bg">
-      <button class="btn-dark size-three">Dark</button>
-      <button class="btn-dark btn-dark-disabled size-three">Dark</button>
-      <br>Dark background; color may vary
-    </div>
-  </div>
-  <div class="card">
-    <h2 class="card-label">Tagged Items</h2>
-    <div>
-      <button class="tagged">Tagged Item Here</button>
-      <button class="tagged">Other Tagged Item</button>
-    </div>
-    <h2 class="card-label">Toggle</h2>
-    <div>
-      <input id="toggle-1" class="toggle toggle-round" type="checkbox">
-      <label for="toggle-1"></label>
-      <!-- DISABLED
-      <input id="cmn-toggle-2" class="cmn-toggle cmn-toggle-round-disabled" type="checkbox">
-      <label for="cmn-toggle-2"></label>
-      -->
-    </div>
   </div>
 
+  <div class="card item">
+  <h2>Symmetric Values</h2>
 
-</div>
-
-<hr>
-<!-- CHECKBOXES -->
-<h2>Checkboxes</h2>
-<div style="margin: auto 0; text-align:center;">
-<table class="checkboxes" style="width:130%; margin: auto 0;max-width:700px">
-  <tr style="height:40px">
-    <td><h2 class="card-label">Active</h2></td>
-    <td><h2 class="card-label"></h2></td>
-    <td><h2 class="card-label"></h2></td>
-    <td></td>
-  </tr>
-  <tr style="height:40px">
-    <td><input type="checkbox" id="c1" />
-    <label for="c1"><span></span>Label</label></td>
-    <td><input checked type="checkbox" id="c2" />
-    <label for="c2"><span></span>Label</label></td>
-    <td><input type="radio" id="c3" name="radio-ex"/>
-    <label for="c3"><span></span>Label</label></td>
-    <td><input checked type="radio" id="c4" name="radio-ex"/>
-    <label for="c4"><span></span>Label</label></td>
-  </tr>
-
-  <tr style="height:40px">
-    <td><h2 class="card-label">Error</h2></td>
-    <td><h2 class="card-label"></h2></td>
-    <td><h2 class="card-label"></h2></td>
-    <td></td>
-  </tr>
-  <tr style="height:40px">
-    <td><input class="checkbox-error" type="checkbox" id="c5" />
-    <label for="c5"><span></span>Label</label></td>
-    <td><input checked class="checkbox-error" type="checkbox" id="c6" />
-    <label for="c6"><span></span>Label</label></td>
-    <td><input class="radio-error" type="radio" id="c7" name="radio-ex2"/>
-    <label for="c7"><span></span>Label</label></td>
-    <td><input checked class="radio-error" type="radio" id="c8" name="radio-ex2"/>
-    <label for="c8"><span></span>Label</label></td>
-  </tr>
-
-  <tr style="height:40px">
-    <td><h2 class="card-label">Disabled</h2></td>
-    <td><h2 class="card-label"></h2></td>
-    <td><h2 class="card-label"></h2></td>
-    <td></td>
-  </tr>
-  <tr style="height:40px">
-    <td><input disabled="disabled" class="checkbox-disabled" type="checkbox" id="c9" />
-    <label for="c9" style="color:#D5D3D4"><span></span>Label</label></td>
-    <td><input checked disabled="disabled" class="checkbox-disabled" type="checkbox" id="c10" />
-    <label for="c10" style="color:#D5D3D4"><span></span>Label</label></td>
-    <td><input disabled="disabled" class="radio-disabled" type="radio" id="c11" name="radio-ex3"/>
-    <label for="c11" style="color:#D5D3D4"><span></span>Label</label></td>
-    <td><input checked disabled="disabled" class="radio-disabled" type="radio" id="c12" name="radio-ex3"/>
-    <label for="c12" style="color:#D5D3D4"><span></span>Label</label></td>
-  </tr>
-</table>
-</div>
-
-<br><hr>
-
-
-<!-- MODALS -->
-<h2>Modal</h2>
-<div style="text-align:center">
-<!-- Trigger/Open The Modal -->
-<button id="modal-btn">SHOW THE MODAL</button>
-  <!-- The Modal -->
-  <div id="modal" class="modal">
-
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&#10005;</span>
-      <h2 style="margin-bottom:10px"> Modal Alert with standard headline</h2>
-      <small>Standard body text, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </small>
-    
-      <div class="modal-buttons">
-        <button style="color:#6B1E4B; font-size: 11pt" class="btn-two size-two close">Button</button>
-        <button style="color:white; font-size: 11pt" class="size-two close">Submit</button>  
-      </div>
-
-    </div>
+  <p>These are the values that guided the creation of Symmetric, and the values that UXD uses to evaluate whether something makes it into the universal Symmetric language or not. These values also serve as a rubric - any changes made to Symmetric should be done with these values in mind. Values are either <strong>Aesthetic</strong> or <strong>Functional</strong>.</p>
   </div>
+  <div class="card item">
+  <h2>Aesthetic Values</h2>
+  <ul>
+    <li><strong>Professional</strong> - Designs should showcase the fact that Outbrain is professional and enterprise software. Designs should reflect that Outbrain is one of the leading content marketing platforms in the industry. </li>
+    <li><strong>Clean</strong> - Designs should strive to minimize clutter and superfluous elements that don't serve enough functional purpose, follow an organized grid, and contain consistent spacing.</li>
+    <li><strong>Modern</strong> - Designs should be consistent with the latest UI patterns seen across the web.</li>
+    <li><strong>Comprehensible/Legible</strong> - Designs should be as easy to read as possible. Proper whitespacing and contrast is important to us.</li>
+    <li><strong>"Outbrainy"</strong> - Designs should be reflective of the Outbrain brand, which is professional yet playful and approachable (see: the Amelia logo).</li>
+    <li><strong>Trustworthy/Intelligent</strong> - Designs should highlight data and data-driven insights.
+  </li>
+  </ul>
+  </div>
+
+  <div class="card item">
+  <h3>What does the Symmetric Aesthetic look like?</h3>
+  <ul>
+    <li>Shared universal color palette</li>
+    <li>Complimentary colors to orange (brand) and product-specific hero colors</li>
+    <li>Modular grouping</li>
+    <li>Card designs where appropriate</li>
+    <li>Round corners on fields and modules</li>
+    <li>White space</li>
+    <li>Flat buttons</li>
+    <li>Padded Button/padded table rows feeling of space and mobile first approach</li>
+    <li>Consistent chart / device colors</li>
+    <li>Purposeful subtle micro animations and innovative user interaction design to support the flow of the experience and the response to user</li>
+    <li>Layout hierarchy that feels crisp and modern</li>
+    <li>Consistent typography and concrete labeling</li>
+    <li>Crisp and clean flat, solid-filled (not lined) iconography (provided by Material Design unless custom)</li>
+  </ul>
+  </div>
+
+  <div class="card item">
+  <h2>Functional Values</h2>
+  <ul>
+    <li><strong>Up-to-Date</strong> - Anyone looking at Symmetric materials should be confident that whatever they are looking at is the latest version of Symmetric.</li>
+    <li><strong>Efficiency/Reusability</strong> - Symmetric should make it easy for UI components to be re-used for people across the entire product team.</li>
+    <li><strong>Consistency</strong> - Symmetric should encourage recognizable patterns, colors and elements that go hand-in-hand with reusability.</li>
+    <li><strong>Scalability/Maintainability</strong> - creators should be able to change an element in one place and the change should propagate for all instances where that element is located.</li>
+    <li><strong>Test-Driven/Adaptable</strong></li>
+  </ul>
+  </div>
+  <div class="card item">
+  <h3>Symmetric should make the UX designers who create it feel: </h3>
+  <ul>
+    <li><strong>Empowered</strong> - Do I feel like I can contribute to Symmetric?</li>
+    <li><strong>Autonomous</strong> - Do I feel like Symmetric helps me as an individual designer on my projects, and that I can confidently work with it independent of my teammates? </li>
+    <li><strong>Collaborative</strong> - Do I feel like Symmetric is a collaborative effort?</li>
+    <li><strong>In touch/in the loop</strong> - Through Symmetric, do I understand what’s happening in other Outbrain products designed by my teammates?</li>
+  </ul>
+  </div>
+
 </div>
-
-<hr>
-
-<!--
-<h2>Dropdowns</h2>
-
-<select name="dropdown" class="password" style="text-indent:30px">
-  <option value="1">Pick me</option>
-  <option value="2">No pick me</option>
-  <option value="3">No me!</option>
-  <option value="4">Pick me</option>
-</select>
--->
-<div style="text-align:center">
-<div style="margin-left: auto" class="normal white hvr-radial-out" onclick="showdiv('research')">INTERACTIONS RESEARCH</div>
-<br>(Unrelated)</div>
-
-
-<div id="research" style="display:none">
-<h2>Buttons</h2>
-<section class="flex-container">
-<div href="#" class="normal hvr-bounce-to-top">Background Bounce</div>
-<div href="#" class="normal bg hvr-buzz">Buzz on Hover</div>
-
-<div href="#" class="normal white hvr-radial-out">Radial Background</div>
-<div href="#" class="normal underline hvr-underline-from-left">Underline From Left</div>
-<!--<a href="#" style="color:#6B1E4B" class="hvr-hollow">Hollow Background</a>-->
-
-
-</section>
-
-<hr>
-
-
-<h2>Spinners</h2>
-<section class="flex-container" style="height:100px">
-<div id="loader-item" class="load-container loader"></div>
-
-<div id="loader-item" class="load-container loader3"></div>
-
-<div id="loader-item" class="load-container loader2"></div>
-<div id="loader-item" class="load-container loader4">Loading...</div>
-</section>
-<section class="flex-container" >
-
-<div id="loader-item" class="load-container loader6">Loading...</div>
-<div id="loader-item" class="load-container loader5">Loading...</div>
-<div id="loader-item" class="load-container loader8">Loading...</div>
-<div id="loader-item" class="load-container loader7">Loading...</div>
-
-</section>
-<hr>
-
-<h2> Image Interactions </h2>
-<section class="flex-container">
-
-<!-- Top to bottom-->
- 
-    <div class="ih-item square effect3 top_to_bottom"><a style="background-color:transparent;" href="#">
-        <div class="img"><img src="public/images/image1.jpg" alt="img"></div>
-        <div class="info">
-          <h2 style="text-transform:none; color:white">Does Bernie Sanders ever wear pants?</h2>
-        </div></a></div>
- 
-    <div class="ih-item square effect6 from_top_and_bottom"><a style="background-color:transparent;" href="#">
-        <div class="img"><img src="public/images/image1.jpg" alt="img"></div>
-        <div class="info">
-          <h2 style="text-transform:none; color:white">What did people eat in the 1800s?</h2>
-        </div></a></div>
-
-    <div class="ih-item square colored effect13 bottom_to_top"><a style="background-color:transparent;" href="#">
-        <div class="img"><img src="public/images/image1.jpg" alt="img"></div>
-        <div class="info">
-          <h2 style="text-transform:none; color:white">Astonishing new research on dank memes</h2>
-        </div></a></div>
-
-    <div class="ih-item square colored effect3 top_to_bottom bw"><a style="background-color:transparent;" href="#">
-        <div class="img"><img src="public/images/image1.jpg" alt="img"></div>
-        <div class="info">
-          <h2 style="text-transform:none; color:white">Astonishing new research on dank memes</h2>
-        </div></a></div>
-
-<div class="ih-item square effect6 from_top_and_bottom blur"><a style="background-color:transparent;" href="#">
-        <div class="img"><img src="public/images/image1.jpg" alt="img"></div>
-        <div class="info">
-          <h2 style="text-transform:none; color:white">What did people eat in the 1800s?</h2>
-        </div></a></div>
-
-    <div class="ih-item square colored effect13 bottom_to_top blur"><a style="background-color:transparent;" href="#">
-        <div class="img"><img src="public/images/image1.jpg" alt="img"></div>
-        <div class="info">
-          <h2 style="text-transform:none; color:white">Astonishing new research on dank memes</h2>
-        </div></a></div>
-
-</section>
-</div>
-</main>
-
-<script>
-function showdiv(id){
-  var change = document.getElementById(id);
-  if (change.style.display === 'none'){
-    change.style.display = 'block';
-  } else {
-    change.style.display = 'none';
-  }
-}
-</script>
-<script>
-// Get the modal
-var modal = document.getElementById('modal');
-
-
-// Get the button that opens the modal
-var btn = document.getElementById("modal-btn");
-
-// Get the <span> element that closes the modal
-for (var i = 0; i < document.getElementsByClassName("close").length; i++) {
-  var span = document.getElementsByClassName("close")[i];
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
-}
-
-
-// When the user clicks on the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "block";
-    console.log("style", modal.style.display);
-}
-
-
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
-
-<script>
-function copyToClipboard(inputEle) {
-
-  // Create a "hidden" input
-  var aux = document.createElement("input");
-
-  var element = inputEle;
-  var title = element.getAttribute('data-original-title');
-
-
-
-  // If color
-  if (title === 'color'){
-    // Match rgb numbers
-    var rgb = element.style.backgroundColor;
-    var hexArray = rgb.match(/\d+/g);
-    var hex = '#'
-    
-    // Convert to hex
-    for (var i = 0; i < hexArray.length; i++) {
-      var hexVal = Number(hexArray[i]).toString(16);
-      hex = hex + hexVal;
-    }
-
-    // Copy hex value
-    aux.setAttribute("value", hex);
-
-  }
-  
-  else if (title === 'text style'){
-      aux.setAttribute("value", "23pt");
-  }
-  
-  // Append it to the body
-  document.body.appendChild(aux);
-
-  // Highlight its content
-  aux.select();
-
-  // Copy the highlighted text
-  document.execCommand("copy");
-
-  // Remove it from the body
-  document.body.removeChild(aux);
-
-}
-</script>
-
-<script>
-
-$(document).ready(function(){
-  $('.card-slider').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    adaptiveHeight: true
-  });
-});
-
-</script>
-<script src="public/javascripts/tooltip.js"></script>
-<script> $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-</script>
-
-
-<script href="javascripts/modal.js"></script>
 </body>
 
 </html>

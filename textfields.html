@@ -1,0 +1,78 @@
+<!doctype HTML>
+<head>
+<title>Textfields</title>
+<link rel="stylesheet" type="text/css" href="public/stylesheets/hover.css">
+<link rel="stylesheet" type="text/css" href="public/stylesheets/style.css">
+<link rel="stylesheet" type="text/css" href="public/stylesheets/ihover.css">
+<link rel="stylesheet" type="text/css" href="public/stylesheets/slick.css"/>
+<link rel="stylesheet" type="text/css" href="public/stylesheets/slick-theme.css"/>
+
+<script type="text/javascript" src="public/javascripts/jquery-min.js"></script>
+<script type="text/javascript" src="public/javascripts/slick.min.js"></script>
+<script type="text/javascript" src="public/javascripts/set-active-tab.js"></script>
+
+</head>
+
+<div class="nav">
+    <a href="index.html"><img src="public/images/sym-header.png"></a>
+    <a class="item" href="examples.html">Examples</a>
+  </div>
+<div class="side-nav">
+  <ul>
+    <a href="index.html" id="home"><li class="item">Mission Statement</li></a>
+    <a href="type.html" id="type"><li class="item">Typography</li></a>
+    <a href="colors.html" id="colors"><li class="item">Colors</li></a>
+    <a href="buttons.html" id="buttons"><li class="item">Buttons</li></a>
+    <a href="textfields.html" id="textfields"><li class="item">Text Fields</li></a>
+    <a href="checkboxes.html" id="checkboxes"><li class="item">Checkboxes</li></a>
+    <a href="modals.html" id="modals"><li class="item">Modals and Popovers</li></a>
+    <a href="animations.html" id="animations"><li class="item">Animations</li></a>
+  </ul>
+</div>
+
+<body>
+
+<div class="wrapper">
+<h2>Text Fields</h2>
+
+<div class="flexbox-container">
+<form class="form">
+  Default Field <br>
+  <input type="text" name="default" placeholder="Default form value"><br>
+  Invalid Field <br>
+  <div style="position:relative;"><input type="text" name="invalid" class="invalid"><img src="public/images/alert.png" style="position: absolute; margin-left: 10px; margin-top:8px"></div>
+  <span style="font-family: Open Sans, Helvetica, Arial, sans-serif;font-size: 9pt;font-weight: 100; color: #BE3655;">Error messaging looks like this.</span><br>
+</form>
+<form class="form">
+  Password Field <br>
+  <input type="password" name="Password" class="password" placeholder="&sdot;&sdot;&sdot;&sdot;&sdot;&sdot;&sdot;&sdot;"><br>
+  Money Field <br>
+  <input type="number" min="0.01" step="0.01" name="money" class="money"><br>
+</form>
+</div>
+
+<!--
+
+<h2>Error Behavior</h2>
+
+<form id="input-form" action="" >
+  <fieldset>
+      <label>Feedback *</label>
+      <textarea id="bad-text"></textarea>
+      <span id="error-feedback" class="errortext"></span>
+  </fieldset>
+  <div style="text-align: center"><button id="form-submit" onclick="error()" type="submit" value="Submit">Submit</button></div>
+</form>
+-->
+
+</div>
+</body>
+
+<script>
+function error() {
+	document.getElementById("bad-text").className = "invalid";
+  document.getElementById("error-name").innerHTML = "Invalid field.";
+}
+</script>
+
+</html>

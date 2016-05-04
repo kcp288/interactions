@@ -1,0 +1,116 @@
+<!doctype HTML>
+<head>
+<title>Buttons</title>
+<link rel="stylesheet" type="text/css" href="public/stylesheets/hover.css">
+<link rel="stylesheet" type="text/css" href="public/stylesheets/style.css">
+<link rel="stylesheet" type="text/css" href="public/stylesheets/ihover.css">
+<link rel="stylesheet" type="text/css" href="public/stylesheets/slick.css"/>
+<link rel="stylesheet" type="text/css" href="public/stylesheets/slick-theme.css"/>
+
+<script type="text/javascript" src="public/javascripts/jquery-min.js"></script>
+<script type="text/javascript" src="public/javascripts/slick.min.js"></script>
+<script type="text/javascript" src="public/javascripts/set-active-tab.js"></script>
+
+</head>
+
+<div class="nav">
+    <a href="index.html"><img src="public/images/sym-header.png"></a>
+    <a class="item" href="examples.html">Examples</a>
+  </div>
+<div class="side-nav">
+  <ul>
+    <a href="index.html" id="home"><li class="item">Mission Statement</li></a>
+    <a href="type.html" id="type"><li class="item">Typography</li></a>
+    <a href="colors.html" id="colors"><li class="item">Colors</li></a>
+    <a href="buttons.html" id="buttons"><li class="item">Buttons</li></a>
+    <a href="textfields.html" id="textfields"><li class="item">Text Fields</li></a>
+    <a href="checkboxes.html" id="checkboxes"><li class="item">Checkboxes</li></a>
+    <a href="modals.html" id="modals"><li class="item">Modals and Popovers</li></a>
+    <a href="animations.html" id="animations"><li class="item">Animations</li></a>
+  </ul>
+</div>
+
+<body>
+
+
+<div class="wrapper">
+
+<!-- BUTTONS -->
+<h2>Buttons</h2>
+<!--Size 1-->
+<div class="card-wrap">
+
+  <div class="card" style="width:350px; height:300px">
+    <h2 class="card-label">Size 1</h2>
+    <div style="align-self:center">
+      <button>Primary</button>
+      <button class="btn-disabled">Primary</button>
+    </div>
+    <div style="align-self:center">
+      <button class="btn-two">Secondary</button>
+      <button class="btn-disabled">Secondary</button>
+    </div>
+    <div class="dark-bg">
+      <button class="btn-dark">Dark</button>
+      <button class="btn-dark btn-dark-disabled">Dark</button>
+      <br>Dark background; color may vary
+    </div>
+  </div>
+
+  <!--Size 2-->
+  <div class="card" style="width:350px">
+    <h2 class="card-label">Size 2</h2>
+    <div style="align-self:center">
+      <button class="size-two">Primary</button>
+      <button class="btn-disabled size-two">Primary</button>
+    </div>
+    <div style="align-self:center">
+      <button class="btn-two size-two">Secondary</button>
+      <button class="btn-disabled size-two">Secondary</button>
+    </div>
+    <div class="dark-bg">
+      <button class="btn-dark size-two">Dark</button>
+      <button class="btn-dark btn-dark-disabled size-two">Dark</button>
+      <br>Dark background; color may vary
+    </div>
+  </div> 
+  <!--Size 3-->
+  <div class="card" style="width:350px">
+    <h2 class="card-label">Size 3</h2>
+    <div>
+      <button class="size-three">Primary</button>
+      <button class="btn-disabled size-three">Primary</button>
+    </div>
+    <div>
+      <button class="btn-two size-three">Secondary</button>
+      <button class="btn-disabled size-three">Secondary</button>
+    </div>
+    <div class="dark-bg">
+      <button class="btn-dark size-three">Dark</button>
+      <button class="btn-dark btn-dark-disabled size-three">Dark</button>
+      <br>Dark background; color may vary
+    </div>
+  </div>
+  <div class="card" style="width:350px">
+    <h2 class="card-label">Tagged Items</h2>
+    <div>
+      <button class="tagged">Tagged Item Here</button>
+      <button class="tagged">Other Tagged Item</button>
+    </div>
+    <h2 class="card-label">Toggle</h2>
+    <div>
+      <input id="toggle-1" class="toggle toggle-round" type="checkbox">
+      <label for="toggle-1"></label>
+      <!-- DISABLED
+      <input id="cmn-toggle-2" class="cmn-toggle cmn-toggle-round-disabled" type="checkbox">
+      <label for="cmn-toggle-2"></label>
+      -->
+    </div>
+  </div>
+
+</div>
+
+</div>
+</body>
+
+</html>

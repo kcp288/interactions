@@ -1,0 +1,97 @@
+<!doctype HTML>
+<head>
+<title>Checkboxes</title>
+<link rel="stylesheet" type="text/css" href="public/stylesheets/hover.css">
+<link rel="stylesheet" type="text/css" href="public/stylesheets/style.css">
+<link rel="stylesheet" type="text/css" href="public/stylesheets/ihover.css">
+<link rel="stylesheet" type="text/css" href="public/stylesheets/slick.css"/>
+<link rel="stylesheet" type="text/css" href="public/stylesheets/slick-theme.css"/>
+
+<script type="text/javascript" src="public/javascripts/jquery-min.js"></script>
+<script type="text/javascript" src="public/javascripts/slick.min.js"></script>
+<script type="text/javascript" src="public/javascripts/set-active-tab.js"></script>
+
+</head>
+
+<div class="nav">
+    <a href="index.html"><img src="public/images/sym-header.png"></a>
+    <a class="item" href="examples.html">Examples</a>
+  </div>
+<div class="side-nav">
+  <ul>
+    <a href="index.html" id="home"><li class="item">Mission Statement</li></a>
+    <a href="type.html" id="type"><li class="item">Typography</li></a>
+    <a href="colors.html" id="colors"><li class="item">Colors</li></a>
+    <a href="buttons.html" id="buttons"><li class="item">Buttons</li></a>
+    <a href="textfields.html" id="textfields"><li class="item">Text Fields</li></a>
+    <a href="checkboxes.html" id="checkboxes"><li class="item">Checkboxes</li></a>
+    <a href="modals.html" id="modals"><li class="item">Modals and Popovers</li></a>
+    <a href="animations.html" id="animations"><li class="item">Animations</li></a>
+  </ul>
+</div>
+
+<body>
+
+<div class="wrapper">
+
+<!-- CHECKBOXES -->
+<h2>Checkboxes</h2>
+<div style="margin: auto 0; text-align:center;">
+<table class="checkboxes" style="width:130%; margin: auto 0;max-width:700px">
+  <tr style="height:40px">
+    <td><h2 class="card-label">Active</h2></td>
+    <td><h2 class="card-label"></h2></td>
+    <td><h2 class="card-label"></h2></td>
+    <td></td>
+  </tr>
+  <tr style="height:40px">
+    <td><input type="checkbox" id="c1" />
+    <label for="c1"><span></span>Label</label></td>
+    <td><input checked type="checkbox" id="c2" />
+    <label for="c2"><span></span>Label</label></td>
+    <td><input type="radio" id="c3" name="radio-ex"/>
+    <label for="c3"><span></span>Label</label></td>
+    <td><input checked type="radio" id="c4" name="radio-ex"/>
+    <label for="c4"><span></span>Label</label></td>
+  </tr>
+
+  <tr style="height:40px">
+    <td><h2 class="card-label">Error</h2></td>
+    <td><h2 class="card-label"></h2></td>
+    <td><h2 class="card-label"></h2></td>
+    <td></td>
+  </tr>
+  <tr style="height:40px">
+    <td><input class="checkbox-error" type="checkbox" id="c5" />
+    <label for="c5"><span></span>Label</label></td>
+    <td><input checked class="checkbox-error" type="checkbox" id="c6" />
+    <label for="c6"><span></span>Label</label></td>
+    <td><input class="radio-error" type="radio" id="c7" name="radio-ex2"/>
+    <label for="c7"><span></span>Label</label></td>
+    <td><input checked class="radio-error" type="radio" id="c8" name="radio-ex2"/>
+    <label for="c8"><span></span>Label</label></td>
+  </tr>
+
+  <tr style="height:40px">
+    <td><h2 class="card-label">Disabled</h2></td>
+    <td><h2 class="card-label"></h2></td>
+    <td><h2 class="card-label"></h2></td>
+    <td></td>
+  </tr>
+  <tr style="height:40px">
+    <td><input disabled="disabled" class="checkbox-disabled" type="checkbox" id="c9" />
+    <label for="c9" style="color:#D5D3D4"><span></span>Label</label></td>
+    <td><input checked disabled="disabled" class="checkbox-disabled" type="checkbox" id="c10" />
+    <label for="c10" style="color:#D5D3D4"><span></span>Label</label></td>
+    <td><input disabled="disabled" class="radio-disabled" type="radio" id="c11" name="radio-ex3"/>
+    <label for="c11" style="color:#D5D3D4"><span></span>Label</label></td>
+    <td><input checked disabled="disabled" class="radio-disabled" type="radio" id="c12" name="radio-ex3"/>
+    <label for="c12" style="color:#D5D3D4"><span></span>Label</label></td>
+  </tr>
+</table>
+</div>
+
+</div>
+</body>
+
+</html>

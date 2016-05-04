@@ -1,4 +1,4 @@
-# Outbrain research
+ Outbrain research
 
 Migrating Symmetric style guide to HTML/CSS.
 Part of UXD Outbrain internship, Spring 2016.
