@@ -455,12 +455,12 @@ textarea:focus, input:focus {
   color: #726C6F;
   font-size: 10pt;
   padding-right: 20px;
-  background: url(public/images/x.png) no-repeat;
+  background: url(./public/images/x.png) no-repeat;
   background-position: right; }
   .tagged:hover {
     border: 1px solid #958D91;
     background: transparent;
-    background: url(public/images/x2.png) no-repeat;
+    background: url(./public/images/x2.png) no-repeat;
     background-position: right; }
 
 .checkboxes {
@@ -543,22 +543,22 @@ input[type="checkbox"] {
     input[type="checkbox"] + label span:hover {
       border: 2px solid #69739E; }
   input[type="checkbox"]:checked + label span {
-    background: url(public/images/checked.png) center no-repeat, #726C6F; }
+    background: url(./public/images/checked.png) center no-repeat, #726C6F; }
     input[type="checkbox"]:checked + label span:hover {
       border: 2px solid #69739E;
-      background: url(public/images/checked.png) center no-repeat, #69739E; }
+      background: url(./public/images/checked.png) center no-repeat, #69739E; }
 input.checkbox-error[type="checkbox"] + label span {
   border: 2px solid #C03453; }
 input.checkbox-error[type="checkbox"]:checked + label span {
   border: 2px solid #C03453;
-  background: url(public/images/checked.png) center no-repeat, #C03453; }
+  background: url(./public/images/checked.png) center no-repeat, #C03453; }
 input[type="checkbox"]:disabled + label span {
   border: 2px solid #D5D3D4;
   pointer-events: none; }
 input.checkbox-disabled[type="checkbox"]:checked + label span {
   border: 2px solid #D5D3D4;
   pointer-events: none;
-  background: url(public/images/checked.png) center no-repeat, #D5D3D4; }
+  background: url(./public/images/checked.png) center no-repeat, #D5D3D4; }
 input[type="radio"] {
   display: none; }
   input[type="radio"] + label span {
@@ -574,21 +574,21 @@ input[type="radio"] {
     input[type="radio"] + label span:hover {
       border: 2px solid #69739E; }
   input[type="radio"]:checked + label span {
-    background: url(public/images/rdio.png) center no-repeat, white; }
+    background: url(./public/images/rdio.png) center no-repeat, white; }
     input[type="radio"]:checked + label span:hover {
       border: 2px solid #69739E;
-      background: url(public/images/rdio-hvr.png) center no-repeat, white; }
+      background: url(./public/images/rdio-hvr.png) center no-repeat, white; }
 input.radio-error[type="radio"] + label span {
   border: 2px solid #C03453; }
 input.radio-error[type="radio"]:checked + label span {
   border: 2px solid #C03453;
-  background: url(public/images/rdio-err.png) center no-repeat, white; }
+  background: url(./public/images/rdio-err.png) center no-repeat, white; }
 input[type="radio"]:disabled + label span {
   border: 2px solid #D5D3D4;
   pointer-events: none; }
 input.radio-disabled[type="radio"]:checked + label span {
   border: 2px solid #D5D3D4;
-  background: url(public/images/rdio-dsb.png) center no-repeat, white;
+  background: url(./public/images/rdio-dsb.png) center no-repeat, white;
   pointer-events: none; }
 
 /* CHECKBOX */
@@ -613,14 +613,14 @@ input[type=password] {
   box-sizing: border-box;
   background-attachment: fixed;
   background-size: cover;
-  background: url(public/images/lock.png) no-repeat, #fff;
+  background: url(./public/images/lock.png) no-repeat, #fff;
   background-position: 0px;
   padding-left: 40px; }
 
 .money {
   box-sizing: border-box;
   background-attachment: fixed;
-  background: url(public/images/dollar.png) no-repeat scroll, #fff;
+  background: url(./public/images/dollar.png) no-repeat scroll, #fff;
   padding-left: 35px;
   background-position: 0px; }
 
