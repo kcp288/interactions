@@ -18,14 +18,14 @@
   </div>
 <div class="side-nav">
   <ul>
-    <a href="interactions/index.html" id="home"><li class="item">Mission Statement</li></a>
-    <a href="interactions/type.html" id="type"><li class="item">Typography</li></a>
-    <a href="interactions/colors.html" id="colors"><li class="item">Colors</li></a>
-    <a href="interactions/buttons.html" id="buttons"><li class="item">Buttons</li></a>
-    <a href="interactions/textfields.html" id="textfields"><li class="item">Text Fields</li></a>
-    <a href="interactions/checkboxes.html" id="checkboxes"><li class="item">Checkboxes</li></a>
-    <a href="interactions/modals.html" id="modals"><li class="item">Modals and Popovers</li></a>
-    <a href="interactions/animations.html" id="animations"><li class="item">Animations</li></a>
+    <a href="index.html" id="home"><li class="item">Mission Statement</li></a>
+    <a href="type.html" id="interactions/type"><li class="item">Typography</li></a>
+    <a href="colors.html" id="interactions/colors"><li class="item">Colors</li></a>
+    <a href="buttons.html" id="interactions/buttons"><li class="item">Buttons</li></a>
+    <a href="textfields.html" id="interactions/textfields"><li class="item">Text Fields</li></a>
+    <a href="checkboxes.html" id="interactions/checkboxes"><li class="item">Checkboxes</li></a>
+    <a href="modals.html" id="interactions/modals"><li class="item">Modals and Popovers</li></a>
+    <a href="animations.html" id="interactions/animations"><li class="item">Animations</li></a>
   </ul>
 </div>
 
@@ -109,7 +109,7 @@ $(function(){
   var url = window.location.pathname;
   url = url.slice(1,url.length);
   console.log(url);
-  if (url == "") document.getElementById("home").className = "active"; 
+  if (url == "interactions/index.html") document.getElementById("home").className = "active"; 
   else document.getElementById(url).className = "active"; 
 });
 
