@@ -2,7 +2,7 @@
 
 Migrating Symmetric style guide to a live style guide in iteratable HTML/CSS. Created as a part of the UXD Outbrain internship, Spring 2016.
 
-Live at http://kcp288.github.io/interactions/
+Live at http://kiracp.github.io/interactions/
 
 
 ##Details
